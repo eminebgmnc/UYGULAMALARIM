@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo" alt="">
+            <img src="img/menu-icon.png" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="left-col">
+                <div class="content">
+                    <h1> <span>Colors</span> are the sailes of nature</h1>
+                    <br>
+                    <p>Colors are the sailes of nature.Colors are the sailes of nature</p>
+                    <div class="arrow">
+                        <img src="img/arrow.png" >
+                    </div>
+                    <img src="img/art.png" class="art" alt="">
+                </div>
+            </div>
+            <div class="right-col">
+                <img src="img/pic1.png" class="picture">
+            </div>
+         </div>
+         <div class="controller">
+            <ul>
+                <li class="active btn">01</li>
+                <li class="btn">02</li>
+                <li class="btn">03</li>
+                <li class="btn">04</li>
+              
+            </ul>
+    </div>
+    
+    </div>
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        for(let i=0; i<btn.length; i++){
+            btn[i].addEventListener('click',function(){
+                let current=document.getElementsByClassName("active");
+                current[0].className=current[0].className.replace("active","");
+                this.className +="active";
+
+            });
+        }
+    </script>
+</body>
+
+</html>
